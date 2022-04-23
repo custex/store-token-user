@@ -18,10 +18,8 @@ const getTokenUser = async (event) => {
     const userToken = result.Item;
 
     return {
-      status: 200,
-      body: {
-        userToken,
-      },
+      statusCode: 200,
+      body: JSON.stringify(userToken)
     };
   } catch (error) {
     console.log(error);

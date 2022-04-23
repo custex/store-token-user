@@ -23,20 +23,20 @@ functions:
     handler: src/postTokenUser.postTokenUser
     events:
       - httpApi: 
-        path: /tokenuser
-        method: post
+          path: /tokenuser
+          method: post
   getTokenUsers:
     handler: src/getTokenUsers.getTokenUsers
     events:
       - httpApi: 
-        path: /tokenusers
-        method: get
+          path: /tokenusers
+          method: get
   getTokenUser:
     handler: src/getTokenUser.getTokenUser
     events:
       - httpApi: 
-        path: /tokenuser/{userId}
-        method: get
+          path: /tokenuser/{userId}
+          method: get
       
 resources:
   Resources:

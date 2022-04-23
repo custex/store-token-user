@@ -19,7 +19,7 @@ const postTokenUser = async (event) => {
       .promise();
 
     return {
-      status: 200,
+      statusCode: 200,
       body: JSON.stringify(newToken),
     };
   } catch (error) {
