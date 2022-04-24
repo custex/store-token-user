@@ -4,7 +4,7 @@ const postTokenUser = async (event) => {
   try {
     const dynamodb = new AWS.DynamoDB.DocumentClient();
 
-    const { userId, token } = event.body;
+    const { userId, token } = JSON.parse(event.body);
 
     const newToken = {
       userId,
